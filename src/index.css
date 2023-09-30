@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom class to hide scrollbar */
+.scrollbar-hidden::-webkit-scrollbar {
+  width: 0 !important;
+  display: none !important;
+}
+
+/* Optional: Customize scrollbar appearance in Firefox */
+.scrollbar-hidden {
+  scrollbar-width: none !important;
+}
+
+/* Optional: Ensure the content remains fully visible */
+.scrollbar-hidden {
+  overflow: -moz-scrollbars-none !important;
+}
