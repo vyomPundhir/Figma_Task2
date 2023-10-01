@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  background: #e7e8ed;
+}
+
 /* Custom class to hide scrollbar */
 .scrollbar-hidden::-webkit-scrollbar {
   width: 0 !important;
