@@ -8,11 +8,13 @@ interface CardProps {
 }
 
 
-const Card = ({name, city, nation, course, university, session}: CardProps) => {
+  const Card = ({name, city, nation, course, university, session}: CardProps) => {
+  
   return (
     <div className="bg-white card flex flex-row items-center gap-[20px] p-[10px]">
 
       <input type="checkbox" name="" id="" className="w-[17px] h-[17px] cursor-pointer"/>
+
 
       <div className="rounded-full bg-[#f3f1f1] w-[50px] h-[50px] flex flex-row justify-center items-center font-[700] text-[#6f95fe]">
         AS

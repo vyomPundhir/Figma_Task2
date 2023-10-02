@@ -1,5 +1,6 @@
 import "../index.css"
-const Internship = () => {
+
+const Internship:React.FC = ({}) => {
 
   return (
     <div className="min-h-screen w-[405px] overflow-y-scroll scrollbar-hidden bg-[#e7e8ed] flex flex-col gap-[20px] items-center ml-[64px] pt-8">
@@ -17,7 +18,7 @@ const Internship = () => {
         <div className="flex flex-row items-center gap-[14px] bg-transparent">
           <img src="src\assets\search.svg" alt="search" className='w-[14px] h-[14px] bg-transparent' />
 
-          <input type="search" name="search" id="" placeholder='Search by name, edu, exp or #tag' className='w-[250px] text-[14px] bg-transparent focus:outline-none'/>
+          <input type="search" name="search" id="search"  placeholder='Search by name' className='w-[250px] text-[14px] bg-transparent focus:outline-none'/>
         </div>
 
         <div className="bg-transparent w-[15px] h-[15px] flex justify-center items-center border-[1.5px] border-[#c5c4c4] text-[#bdbdbd] text-[10px] rounded-full">!</div>
@@ -176,68 +177,6 @@ const Internship = () => {
 
           
         </div>
-
-
-        
-
-        {/* <div className="flex flex-col gap-1">
-          
-          <div className="collapse bg-white w-[350px] h-[72px] rounded-[5px]">
-            <input type="checkbox" /> 
-            <div className="collapse-title text-sm font-medium bg-white">
-              Personal Information
-            </div>
-            <div className="collapse-content h-[12px]"> 
-              <p className="text-sm">hello</p>
-            </div>
-          </div>
-
-          <div className="collapse bg-base-200">
-            <input type="checkbox" /> 
-            <div className="collapse-title text-sm font-medium">
-              Education
-            </div>
-            <div className="collapse-content"> 
-              <p className="text-sm">hello</p>
-            </div>
-          </div>
-
-          <div className="collapse bg-base-200">
-            <input type="checkbox" /> 
-            <div className="collapse-title text-sm font-medium">
-              Work Experince
-            </div>
-            <div className="collapse-content"> 
-              <p className="text-sm">hello</p>
-            </div>
-          </div>
-
-          <div className="collapse bg-base-200">
-            <input type="checkbox" /> 
-            <div className="collapse-title text-sm font-medium">
-              Activity Filter
-            </div>
-            <div className="collapse-content"> 
-              <p className="text-sm">hello</p>
-            </div>
-          </div>
-
-          <div className="collapse bg-base-200">
-            <input type="checkbox" /> 
-            <div className="collapse-title text-sm font-medium">
-              Advanced Filter
-            </div>
-            <div className="collapse-content"> 
-              <p className="text-sm">hello</p>
-            </div>
-          </div>
-                  </div> */}
-
-
-{/* const App: React.FC = () => (
-  
-); */}
-
       </div>
     </div>
   )

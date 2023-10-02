@@ -1,58 +1,67 @@
 import Card from "./Card"
 import "../data"
 import { Data } from "../data"
+import { useState } from "react"
 
 const Candidates = () => {
+
+  const [selectedCategory, setSelectedCategory] = useState<string | 'All'>('All');
+
+  const filteredData = selectedCategory === 'All' ? Data : Data.filter(item => item.Category === selectedCategory);
+
+  const handleCategoryChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    setSelectedCategory(event.target.value);
+  };
+
   return (
     <div className="candidates w-3/5 flex flex-col gap-[33px]">
       <div className="topbar flex flex-row justify-between mt-[20px]">
         <div className="topleft">
 
-          <details className="dropdown">
-            <summary className="rounded-[20px] flex flex-row items-center justify-start gap-[50px] btn bg-[white] hover:bg-[#ffffff] text-[#1D4ED8] font-[700] text-[14px]">
-              Opportunity Browsing
-              <img src="src\assets\down-arrow-blue.png" alt="" className="w-[19px] bg-transparent"/>
-            </summary>
+          <select value={selectedCategory} onChange={handleCategoryChange} className="select w-[300px] text-[#1D4ED8] text-[17spx] font-[700]">
+            <option disabled selected className="w-[300px] h-[40px]">Select a Category</option>
+            <option className="text-[black]">All</option>
+            <option className="text-[black]">Applied</option>
+            <option className="text-[black]">Shortlisted</option>
+            <option className="text-[black]">Technical Interview</option>
+            <option className="text-[black]">Opportunity Browsing</option>
+            <option className="text-[black]">Video Interview I</option>
+            <option className="text-[black]">Video Interview II</option>
+            <option className="text-[black]">Video Interview III</option>
+            <option className="text-[black]">Offer</option>
+            <option className="text-[black]">Withdrawn</option>
+          </select>
 
-            <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-[280px]">
-              <li><a>Applied</a></li>
-              <li><a>Shortlisted</a></li>
-              <li><a>Technical Interview</a></li>
-              <li><a>Opportunity Browsing</a></li>
-              <li><a>Video Interview I</a></li>
-              <li><a>Video Interview II</a></li>
-              <li><a>Video Interview III</a></li>
-              <li><a>Offer</a></li>
-              <li><a>Withdrawn</a></li>
-            </ul>
-          </details>
         </div>
 
         <div className="topright flex flex-row items-center w-[380px] gap-[10px]">
-          <div className="bg-[white] flex flex-row justify-center items-center w-[29px] h-[29px] rounded-[5px]">
+          <div className="bg-[white] flex flex-row justify-center items-center w-[29px] h-[29px] rounded-[5px] cursor-pointer">
             <img src="src\assets\tag.svg" alt="" className="w-[18px] h-[18px] bg-[white]"/>
           </div>
 
-          <div className="bg-[white] flex flex-row justify-center items-center w-[28px] h-[28px] rounded-[5px]">
+          <div className="bg-[white] flex flex-row justify-center items-center w-[28px] h-[28px] rounded-[5px] cursor-pointer">
             <img src="src\assets\user-cross.svg" alt="" className="w-[22px] h-[22px] bg-white"/>
           </div>
 
-          <div className="bg-[white] flex flex-row justify-center items-center w-[28px] h-[28px] rounded-[5px]">
+          <div className="bg-[white] flex flex-row justify-center items-center w-[28px] h-[28px] rounded-[5px] cursor-pointer">
             <img src="src\assets\user-check.svg" alt="" className="w-[22px] h-[22px] bg-white"/>
           </div>
 
-          <div className="bg-[white] flex flex-row justify-center items-center w-[28px] h-[28px] rounded-[5px]">
+          <div className="bg-[white] flex flex-row justify-center items-center w-[28px] h-[28px] rounded-[5px] cursor-pointer">
             <img src="src\assets\user-speak.svg" alt="" className="w-[22px] h-[22px] bg-white"/>
           </div>
 
-          <div className="bg-[white] flex flex-row justify-center items-center w-[28px] h-[28px] rounded-[5px]">
+          <div className="bg-[white] flex flex-row justify-center items-center w-[28px] h-[28px] rounded-[5px] cursor-pointer">
             <img src="src\assets\mail.svg" alt="" className="w-[22px] h-[22px] bg-white"/>
           </div>
 
-          <button className="px-2 text-[13px] text-[white] flex flex-row items-center bg-[#1D4ED8] h-[35px] rounded-[7px] gap-[5px]">
-            Move to Video Interview |
+          <select className="px-2 text-[13px] text-[white] flex flex-row items-center bg-[#1D4ED8] h-[35px] rounded-[7px] gap-[5px] cursor-pointer">
             <img src="src\assets\down-arrow-white.svg" alt="" className="w-[15px] h-[15px] bg-[#1D4ED8]"/>
-          </button>
+            <option disabled selected className="w-[300px] h-[40px]">Move to Video Interview |</option>
+            <option className="text-[black]">Video Interview I</option>
+            <option className="text-[black]">Video Interview II</option>
+            <option className="text-[black]">Video Interview III</option>
+          </select>
         </div>
       </div>
       
@@ -62,7 +71,8 @@ const Candidates = () => {
 
           <div className="bg-transparent flex flex-row gap-[25px] items-center">
             <input type="checkbox" name="" id="" className="w-[17px] h-[17px] cursor-pointer" />
-            <span className="bg-transparent text-[14px] font-[700] text-[#1D4ED8]">247 Candidates</span>
+
+            <span className="bg-transparent text-[14px] font-[700] text-[#1D4ED8]">{filteredData.length} Candidates</span>
           </div>
 
           <div className="bg-transparent flex flex-row items-center gap-[10px]">
@@ -87,18 +97,16 @@ const Candidates = () => {
         
         </div>
 
-        <div className="flex flex-col gap-[5px]">
+        <div className="filteredObjects flex flex-col gap-[5px]">
           {
-            Data.map((dt ,index)=>(
+            filteredData.map((dt ,index)=>(
               <div key={index}>
-                <Card name={dt.Name} city={dt.Location.city} nation={dt.Location.country} course={dt.Education.course} university={dt.Education.university} session={dt.Education.session} />
+                <Card name={dt.Name} city={dt.Location.city} nation={dt.Location.country} course={dt.Education.course} university={dt.Education.university} session={dt.Education.session}/>
               </div>
             ))
           }
         </div>
-
       </div>
-
     </div>
   )
 }
