@@ -1,24 +1,18 @@
-<?xml version="1.0" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<svg width="800px" height="800px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Mail</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mail">
+            <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="24" height="24">
 
-<title/>
+</rect>
+            <rect id="Rectangle" stroke="#0C0310" stroke-width="2" stroke-linecap="round" x="4" y="5" width="16" height="14" rx="2">
 
-<g id="Complete">
+</rect>
+            <path d="M20,7 L12.3,12.775 C12.1222,12.9083 11.8778,12.9083 11.7,12.775 L4,7" id="Path" stroke="#0C0310" stroke-width="2" stroke-linecap="round">
 
-<g id="mail">
-
-<g>
-
-<polyline fill="none" points="4 8.2 12 14.1 20 8.2" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-
-<rect fill="none" height="14" rx="2" ry="2" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="18" x="3" y="6.5"/>
-
-</g>
-
-</g>
-
-</g>
-
+</path>
+        </g>
+    </g>
 </svg>
