@@ -16,7 +16,7 @@ const Internship:React.FC = ({}) => {
       <div className="flex flex-row items-center justify-between w-[350px] bg-[white] px-3 py-2 rounded-[5px]">
 
         <div className="flex flex-row items-center gap-[14px] bg-transparent">
-          <img src="src\assets\search.svg" alt="search" className='w-[14px] h-[14px] bg-transparent' />
+          <img src="src\assets\search.png" alt="search" className='w-[14px] h-[14px] bg-transparent' />
 
           <input type="search" name="search" id="search"  placeholder='Search by name' className='w-[250px] text-[14px] bg-transparent focus:outline-none'/>
         </div>
@@ -37,10 +37,10 @@ const Internship:React.FC = ({}) => {
             <input type="checkbox" /> 
             <div className="collapse-title text-[14px] flex flex-row items-center justify-start gap-[110px] bg-[white]">
               <div className="items-center bg-transparent flex flex-row gap-[8px] w-[200px]">
-                <img src="src\assets\docs.svg" alt="" className="w-[15px] h-[15px] bg-transparent"/>
+                <img src="src\assets\docs.png" alt="" className="w-[15px] h-[15px] bg-transparent"/>
                 Personal Information
               </div>
-              <img src="src\assets\down-arrow.svg" alt="" className="w-[15px] h-[15px] bg-transparent"/>
+              <img src="src\assets\down-arrow.png" alt="" className="w-[15px] h-[15px] bg-transparent"/>
             </div>
 
             <div className="collapse-content bg-white">
@@ -68,10 +68,10 @@ const Internship:React.FC = ({}) => {
             <input type="checkbox" /> 
             <div className="collapse-title text-[14px] flex flex-row items-center justify-start gap-[110px] bg-[white]">
               <div className="items-center bg-transparent flex flex-row gap-[8px] w-[200px]">
-                <img src="src\assets\docs.svg" alt="" className="w-[15px] h-[15px] bg-transparent"/>
+                <img src="src\assets\docs.png" alt="" className="w-[15px] h-[15px] bg-transparent"/>
                 Education
               </div>
-              <img src="src\assets\down-arrow.svg" alt="" className="w-[15px] h-[15px] bg-transparent"/>
+              <img src="src\assets\down-arrow.png" alt="" className="w-[15px] h-[15px] bg-transparent"/>
             </div>
             <div className="collapse-content bg-white">
               <div className="flex flex-row gap-[10px] bg-white">
@@ -97,10 +97,10 @@ const Internship:React.FC = ({}) => {
             <input type="checkbox" /> 
             <div className="collapse-title text-[14px] flex flex-row items-center justify-start gap-[110px] bg-[white]">
               <div className="items-center bg-transparent flex flex-row gap-[8px] w-[200px]">
-                <img src="src\assets\docs.svg" alt="" className="w-[15px] h-[15px] bg-transparent"/>
+                <img src="src\assets\docs.png" alt="" className="w-[15px] h-[15px] bg-transparent"/>
                 Work Experience
               </div>
-              <img src="src\assets\down-arrow.svg" alt="" className="w-[15px] h-[15px] bg-transparent"/>
+              <img src="src\assets\down-arrow.png" alt="" className="w-[15px] h-[15px] bg-transparent"/>
             </div>
             <div className="collapse-content bg-white">
               <div className="flex flex-row gap-[10px] bg-white">
@@ -126,10 +126,10 @@ const Internship:React.FC = ({}) => {
             <input type="checkbox" /> 
             <div className="collapse-title text-[14px] flex flex-row items-center justify-start gap-[110px] bg-[white]">
               <div className="items-center bg-transparent flex flex-row gap-[8px] w-[200px]">
-                <img src="src\assets\docs.svg" alt="" className="w-[15px] h-[15px] bg-transparent"/>
+                <img src="src\assets\docs.png" alt="" className="w-[15px] h-[15px] bg-transparent"/>
                 Activity Filter
               </div>
-              <img src="src\assets\down-arrow.svg" alt="" className="w-[15px] h-[15px] bg-transparent"/>
+              <img src="src\assets\down-arrow.png" alt="" className="w-[15px] h-[15px] bg-transparent"/>
             </div>
             <div className="collapse-content bg-white">
               <div className="flex flex-row gap-[10px] bg-white">
@@ -151,7 +151,7 @@ const Internship:React.FC = ({}) => {
             <input type="checkbox" /> 
             <div className="collapse-title text-[14px] flex flex-row items-center justify-start gap-[110px] bg-[white]">
               <div className="items-center bg-transparent flex flex-row gap-[8px] w-[200px]">
-                <img src="src\assets\docs.svg" alt="" className="w-[15px] h-[15px] bg-transparent"/>
+                <img src="src\assets\docs.png" alt="" className="w-[15px] h-[15px] bg-transparent"/>
                 Advanced Filter
               </div>
             </div>
