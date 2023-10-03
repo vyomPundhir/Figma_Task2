@@ -11,56 +11,56 @@ const Navbar = () => {
           href="#"
           className="rounded-lg p-1.5 text-gray-700 transition-colors duration-200 hover:bg-[#cecece] bg-transparent focus:bg-[#cecece]"
         >
-          <img src="src\assets\home.svg" alt="" className="w-[20px] h-[20px] bg-transparent"/>
+          <img src="src\assets\home.png" alt="" className="w-[20px] h-[20px] bg-transparent"/>
         </a>
 
         <a
           href="#"
           className="rounded-lg bg-transparent p-1.5 text-gray-700 transition-colors duration-200 hover:bg-[#cecece] focus:bg-[#cecece]"
         >
-          <img src="src\assets\users.svg" alt="" className="w-[20px] h-[20px] bg-transparent"/>
+          <img src="src\assets\users.png" alt="" className="w-[20px] h-[20px] bg-transparent"/>
         </a>
 
         <a
           href="#"
           className="rounded-lg bg-transparent p-1.5 text-gray-700 transition-colors duration-200 hover:bg-[#cecece] focus:bg-[#cecece]"
         >
-          <img src="src\assets\calender.svg" alt="" className="w-[20px] h-[20px] bg-transparent"/>
+          <img src="src\assets\calender.png" alt="" className="w-[20px] h-[20px] bg-transparent"/>
         </a>
 
         <a
           href="#"
           className="rounded-lg bg-transparent p-1.5 text-gray-700 transition-colors duration-200 hover:bg-[#cecece] focus:bg-[#cecece]"
         >
-          <img src="src\assets\share.svg" alt="" className="w-[20px] h-[20px] bg-transparent"/>
+          <img src="src\assets\share.png" alt="" className="w-[20px] h-[20px] bg-transparent"/>
         </a>
 
         <a
           href="#"
           className="rounded-lg bg-transparent p-1.5 text-gray-700 transition-colors duration-200 hover:bg-[#cecece] focus:bg-[#cecece]"
         >
-          <img src="src\assets\docs.svg" alt="" className="w-[20px] h-[20px] bg-transparent"/>
+          <img src="src\assets\docs.png" alt="" className="w-[20px] h-[20px] bg-transparent"/>
         </a>
 
         <a
           href="#"
           className="rounded-lg bg-transparent p-1.5 text-gray-700 transition-colors duration-200 hover:bg-[#cecece] focus:bg-[#cecece]"
         >
-          <img src="src\assets\book.svg" alt="" className="w-[20px] h-[20px] bg-transparent"/>
+          <img src="src\assets\book.png" alt="" className="w-[20px] h-[20px] bg-transparent"/>
         </a>
 
         <a
           href="#"
           className="rounded-lg p-1.5 bg-transparent text-gray-700 transition-colors duration-200 hover:bg-[#cecece] focus:bg-[#cecece]"
         >
-          <img src="src\assets\heart.svg" alt="" className="w-[20px] h-[20px] bg-transparent"/>
+          <img src="src\assets\heart.png" alt="" className="w-[20px] h-[20px] bg-transparent"/>
         </a>
 
         <a
           href="#"
           className="rounded-lg bg-transparent p-1.5 text-gray-700 transition-colors duration-200 hover:bg-[#cecece] focus:bg-[#cecece]"
         >
-          <img src="src\assets\left-arrow.svg" alt="" className="w-[20px] h-[20px] bg-transparent"/>
+          <img src="src\assets\left-arrow.png" alt="" className="w-[20px] h-[20px] bg-transparent"/>
         </a>
 
       </nav>
@@ -71,7 +71,7 @@ const Navbar = () => {
           href="#"
           className="rounded-lg bg-transparent p-1.5 text-gray-700 transition-colors duration-200 hover:bg-[#cecece] focus:bg-[#cecece]"
         >
-          <img src="src\assets\setting.svg" alt="" className="bg-transparent w-[20px] h-[20px]"/>
+          <img src="src\assets\setting.png" alt="" className="bg-transparent w-[20px] h-[20px]"/>
         </a>
 
         <a href="#" className="bg-transparent">
