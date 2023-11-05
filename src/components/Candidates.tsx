@@ -2,6 +2,8 @@ import Card from "./Card"
 import "../data"
 import { Data } from "../data"
 import { useState } from "react"
+import tag from "../assets/tag.png"
+import cross from "../assets/user-cross.png"
 
 const Candidates = () => {
 
@@ -36,11 +38,11 @@ const Candidates = () => {
 
         <div className="topright flex flex-row items-center w-[380px] gap-[10px]">
           <div className="bg-[white] flex flex-row justify-center items-center w-[29px] h-[29px] rounded-[5px] cursor-pointer">
-            <img src="src\assets\tag.png" alt="" className="w-[18px] h-[18px] bg-[white]"/>
+            <img src={tag} alt="" className="w-[18px] h-[18px] bg-[white]"/>
           </div>
 
           <div className="bg-[white] flex flex-row justify-center items-center w-[28px] h-[28px] rounded-[5px] cursor-pointer">
-            <img src="src\assets\user-cross.png" alt="" className="w-[22px] h-[22px] bg-white"/>
+            <img src={cross} alt="" className="w-[22px] h-[22px] bg-white"/>
           </div>
 
           <div className="bg-[white] flex flex-row justify-center items-center w-[28px] h-[28px] rounded-[5px] cursor-pointer">
