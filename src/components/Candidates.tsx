@@ -4,6 +4,8 @@ import { Data } from "../data"
 import { useState } from "react"
 import tag from "../assets/tag.png"
 import cross from "../assets/user-cross.png"
+import check from "../assets/user-check.png"
+import speak from "../assets/user-speak.png"
 
 const Candidates = () => {
 
@@ -46,11 +48,11 @@ const Candidates = () => {
           </div>
 
           <div className="bg-[white] flex flex-row justify-center items-center w-[28px] h-[28px] rounded-[5px] cursor-pointer">
-            <img src="src\assets\user-check.png" alt="" className="w-[22px] h-[22px] bg-white"/>
+            <img src={check} alt="" className="w-[22px] h-[22px] bg-white"/>
           </div>
 
           <div className="bg-[white] flex flex-row justify-center items-center w-[28px] h-[28px] rounded-[5px] cursor-pointer">
-            <img src="src\assets\user-speak.png" alt="" className="w-[22px] h-[22px] bg-white"/>
+            <img src={speak} alt="" className="w-[22px] h-[22px] bg-white"/>
           </div>
 
           <div className="bg-[white] flex flex-row justify-center items-center w-[28px] h-[28px] rounded-[5px] cursor-pointer">
