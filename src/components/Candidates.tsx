@@ -6,6 +6,8 @@ import tag from "../assets/tag.png"
 import cross from "../assets/user-cross.png"
 import check from "../assets/user-check.png"
 import speak from "../assets/user-speak.png"
+import mail from "../assets/mail.png"
+import downArrowBlue from "../assets/down-arrow-blue.png"
 
 const Candidates = () => {
 
@@ -56,11 +58,11 @@ const Candidates = () => {
           </div>
 
           <div className="bg-[white] flex flex-row justify-center items-center w-[28px] h-[28px] rounded-[5px] cursor-pointer">
-            <img src="src\assets\mail.png" alt="" className="w-[22px] h-[22px] bg-white"/>
+            <img src={mail} alt="" className="w-[22px] h-[22px] bg-white"/>
           </div>
 
           <select className="px-2 text-[13px] text-[white] flex flex-row items-center bg-[#1D4ED8] h-[35px] rounded-[7px] gap-[5px] cursor-pointer">
-            <img src="src\assets\down-arrow-white.png" alt="" className="w-[15px] h-[15px] bg-[#1D4ED8]"/>
+          <img src={downArrowBlue} alt="" className="w-[15px] h-[15px] bg-[#1D4ED8]"/>
             <option disabled selected className="w-[300px] h-[40px]">Move to Video Interview |</option>
             <option className="text-[black]">Video Interview I</option>
             <option className="text-[black]">Video Interview II</option>
